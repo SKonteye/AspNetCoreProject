@@ -25,11 +25,26 @@ var builder = WebApplication.CreateBuilder(args);
 //app.UseRouting();
 //app.MapGet("/", () => "Hello World");
 //app.Run();
+//WebApplication app = builder.Build();
+//app.UseDeveloperExceptionPage();
+//if (!app.Environment.IsDevelopment())
+//{
+//    app.UseExceptionHandler("/error");
+//}
+//app.MapGet("/error", () => "Sorry, an error occured");
+//app.Run();
+//**********************************//
+//* Json API with minimal API*//
 WebApplication app = builder.Build();
-app.UseDeveloperExceptionPage();
-if (!app.Environment.IsDevelopment())
+var people = new List<Person>
 {
-    app.UseExceptionHandler("/error");
-}
-app.MapGet("/error", () => "Sorry, an error occured");
+    new Person("Moussa", "Diop"),
+    new Person("Abdou", "Fall"),
+    new Person("Fatou", "Toure"),
+    new Person("Awa", "Kasse")
+};
+
+app.MapGet("/person/{name}", (string name) =>
+people.Where(p => p.firstName.StartsWith(name)));
 app.Run();
+public record Person (string firstName, string lastName);
