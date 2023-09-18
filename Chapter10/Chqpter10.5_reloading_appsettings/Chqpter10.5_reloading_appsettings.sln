@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chqpter10.5_reloading_appsettings", "Chqpter10.5_reloading_appsettings.csproj", "{D790D555-7F1A-4DD2-B0A9-8E2B35F2B579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D790D555-7F1A-4DD2-B0A9-8E2B35F2B579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D790D555-7F1A-4DD2-B0A9-8E2B35F2B579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D790D555-7F1A-4DD2-B0A9-8E2B35F2B579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D790D555-7F1A-4DD2-B0A9-8E2B35F2B579}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFE24B80-B072-41E4-BF68-FD7CB42FE7A1}
+	EndGlobalSection
+EndGlobal

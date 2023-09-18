@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Chapter10._4_multiple_providers_configuration</RootNamespace>
+    <UserSecretsId>2e52dacd-40e2-40e7-ad5a-b8b7188da32a</UserSecretsId>
+  </PropertyGroup>
+
+</Project>
