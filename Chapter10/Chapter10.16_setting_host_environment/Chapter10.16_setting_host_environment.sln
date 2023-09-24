@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter10.16_setting_host_environment", "Chapter10.16_setting_host_environment.csproj", "{DEE59665-221C-4F9A-8D3B-28449273CBEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEE59665-221C-4F9A-8D3B-28449273CBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE59665-221C-4F9A-8D3B-28449273CBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE59665-221C-4F9A-8D3B-28449273CBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE59665-221C-4F9A-8D3B-28449273CBEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA2BF369-C705-458C-90D4-96324B851778}
+	EndGlobalSection
+EndGlobal
