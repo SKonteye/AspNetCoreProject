@@ -8,10 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="OpenAPIs\swagger.json" CodeGenerator="NSwagCSharp" Namespace="Fruit" ClassName="FruitClient">
-	<Options>/UseBaseUrl:false /GenerateClientInterfaces:true
-	    /JsonLibrary:SystemTextJson</Options>
-    <SourceUri>https://localhost:7232/swagger/v1/swagger.json</SourceUri>
+    <None Remove="OpenAPIs\swagger.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <OpenApiReference Include="OpenAPIs\swagger1.json" CodeGenerator="NSwagCSharp" Namespace="Fruit" ClassName="FruitClient">
+      <SourceUri>https://localhost:7232/swagger/v1/swagger.json</SourceUri>
+		<Options>/UseBaseUrl:false /GenerateClientInterfaces:true /JsonLibrary:SystemTextJson</Options>
     </OpenApiReference>
   </ItemGroup>
 
@@ -20,7 +23,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <!--<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />-->
     <PackageReference Include="NSwag.ApiDescription.Client" Version="13.18.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

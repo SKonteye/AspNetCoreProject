@@ -17,6 +17,7 @@ app.MapGet("/fruit/{id}", (string id) =>
     ? TypedResults.Ok(fruit)
     : Results.Problem(statusCode: 400))
     .WithTags("fruit")
+    .WithName("fruitG")
     .Produces<Fruit>()
     .ProducesValidationProblem(404);
 app.MapPost("/fruit/{id}", (string id, Fruit fruit) =>
@@ -27,6 +28,7 @@ app.MapPost("/fruit/{id}", (string id, Fruit fruit) =>
          { "id", new[] { "A fruit with this id already exists"} }
      }))
     .WithTags("fruit")
+    .WithName("fruitP")
     .Produces<Fruit>(201)
     .ProducesValidationProblem()
     ;
