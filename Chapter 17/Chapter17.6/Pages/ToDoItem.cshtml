@@ -1,0 +1,19 @@
+﻿@page
+@model Chapter17._6.Pages.ToDoItemModel
+
+<div>
+    @if (Model.IsComplete)
+    {
+        <strong>Well done, you're all done!</strong>
+    }
+    else
+    {
+        <strong>The following tasks remain:</strong>
+        <ul>
+            @foreach (var task in Model.Tasks)
+            {
+                <li>@Html.Raw(task)</li>
+            }
+        </ul>
+    }
+</div>

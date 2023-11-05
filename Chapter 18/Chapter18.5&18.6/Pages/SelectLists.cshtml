@@ -1,0 +1,11 @@
+﻿@page
+@model Chapter18._5_18._6.Pages.SelectListsModel
+@{
+}
+
+<select asp-for="Input.SelectedValue1"
+    asp-items="Model.Items"></select>
+<select asp-for="Input.SelectedValue2"
+    asp-items="Model.Items" size="4"></select>
+<select asp-for="Input.MultiValues"
+    asp-items="Model.Items"></select>

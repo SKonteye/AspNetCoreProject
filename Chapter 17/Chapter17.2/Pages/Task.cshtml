@@ -1,0 +1,13 @@
+﻿@page
+@{
+    var tasks = new List<string>
+    { "Buy milk", "Buy eggs", "Buy bread" };
+}
+<h1>Tasks to complete</h1>
+<ul>
+    @for(var i=0; i< tasks.Count; i++)
+    {
+        var task = tasks[i];
+        <li>@i - @task</li>
+    }
+</ul>
